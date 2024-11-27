@@ -1,11 +1,11 @@
 #include<stdio.h>
 
-void caluculatePower(int x,int y)
+void caluculatePower(int base,int expo)
 {
     int result=1;
-    for(int i=1;i<=y;i++)
+    for(int i=1;i<=expo;i++)
     {
-        result=result*x;
+        result=result*base;
 
     }
     printf("Result =%d",result);
