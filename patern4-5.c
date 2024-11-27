@@ -2,8 +2,9 @@
 int main()
 {
 int row,col,n;
-printf("Enter the value of n");
+printf("Enter the value of n :");
 scanf("%d",&n);
+char ch='A';
 
 for(row=1;row<=n;row++)
 {
@@ -11,15 +12,16 @@ for(row=1;row<=n;row++)
     {
         printf(" ");
     }
+
     for(col=1;col<=row;col++)
     {
-        printf("*");
+        printf("%c",ch);
+        ch=ch+1;
     }
     printf("\n");
+    ch='A';
 }
 
 
-
-
-    return 0;
+   return 0;
 }
