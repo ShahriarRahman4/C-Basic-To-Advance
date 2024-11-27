@@ -1,21 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int num,rem,temp,sum=0;
+int num,sum=0;
+int rem;
 
-    printf("Enter any  number :");
-    scanf("%d",&num);
+printf("Enter any number :");
+scanf("%d",&num);
 
-    temp=num;
+while(num!=0)
+{
+    rem=num%10;
+    sum=sum+rem;
+    num=num/10;
+}
 
-    while(temp!=0)
-    {
-        rem=temp%10;
-        sum=sum+rem;
-        temp=temp/10;
-
-    }
-
-    printf("sum of digits : %d",sum);
+printf("Sum =%d",sum);
 
 }
