@@ -2,22 +2,22 @@
 int main()
 {
     int row,col,n;
-    printf("Enter the value of n");
+    printf("Enter the value of n :");
     scanf("%d",&n);
 
-    for(row=1;row<n;row++)
+    for(row=1;row<=n;row++)
     {
         for(col=1;col<=n;col++)
         {
-            if(row==col||row+col==n+1)
+            if(col==1||row==n||row==col)
             {
                 printf("*");
-            }
+            } 
             else
             {
                 printf(" ");
-
             }
+            
         }
         printf("\n");
     }
